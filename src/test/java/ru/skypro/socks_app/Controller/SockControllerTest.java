@@ -14,8 +14,8 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import main.java.ru.skypro.socks_app.controller.SockController;
-import main.java.ru.skypro.socks_app.service.SockService;
+import ru.skypro.socks_app.controller.SockController;
+import ru.skypro.socks_app.service.SockService;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
