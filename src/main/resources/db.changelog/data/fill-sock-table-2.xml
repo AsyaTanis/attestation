@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="fill-sock-table.2" author="asy">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="sock"/>
+        </preConditions>
+
+        <insert tableName="sock">
+            <column name="color">red</column>
+            <column name="cotton_part">85</column>
+            <column name="quantity">110</column>
+        </insert>
+
+        <insert tableName="sock">
+            <column name="color">green</column>
+            <column name="cotton_part">75</column>
+            <column name="quantity">130</column>
+        </insert>
+
+        <insert tableName="sock">
+            <column name="color">blue</column>
+            <column name="cotton_part">65</column>
+            <column name="quantity">150</column>
+        </insert>
+
+        <insert tableName="sock">
+            <column name="color">white</column>
+            <column name="cotton_part">55</column>
+            <column name="quantity">170</column>
+        </insert>
+
+        <insert tableName="sock">
+            <column name="color">orange</column>
+            <column name="cotton_part">45</column>
+            <column name="quantity">190</column>
+        </insert>
+
+        <insert tableName="sock">
+            <column name="color">pink</column>
+            <column name="cotton_part">35</column>
+            <column name="quantity">210</column>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
